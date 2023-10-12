@@ -37,5 +37,4 @@ import moment from 'moment';
     </ChakraProvider>
   );
 }
-
 export default WebSites;
