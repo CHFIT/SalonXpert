@@ -1,4 +1,3 @@
-import React from 'react'
 import { useState } from 'react'
 
 function LoginPage() {
@@ -18,6 +17,7 @@ function LoginPage() {
     console.log(credentials)
   }
 
+  
   return (
     <div>
       <form onSubmit={handleSubmit}>
@@ -38,5 +38,4 @@ function LoginPage() {
     </div>
   )
 }
-
 export default LoginPage
