@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import axios from 'axios'
 
 function LoginPage() {
   const [credentials, setCredentials] = useState({
@@ -12,9 +13,10 @@ function LoginPage() {
       [e.target.name]: e.target.value
     })
   }
-  const handleSubmit = () => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
     console.log(credentials)
+    await axios.post('/api/auth/login', credentials)
   }
 
   
